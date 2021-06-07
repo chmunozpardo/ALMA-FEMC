@@ -1,11 +1,11 @@
 // LFNSMART.H
 
 #ifndef NODLLIB
-#include "dostruct.h"   //  DOS structures
+#include "../inc/dostruct.h"   //  DOS structures
 #undef min
-#include "dosdef.h"
-#include "datalght.h"
-#include "dllfn.h"      //  LFN and LFN "smart" functions
+#include "../inc/dosdef.h"
+#include "../inc/datalght.h"
+#include "../inc/dllfn.h"      //  LFN and LFN "smart" functions
 #define ff_attrib attr
 #define ff_name  name
 #define ff_fdate  date

@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "name": "Win16",
+            "includePath": [
+                "${workspaceFolder}/inc/**"
+            ],
+            "compilerPath": "C:/WATCOM/binnt/wcc.exe",
+            "cStandard": "c99"
+        }
+    ],
+    "version": 4
+}

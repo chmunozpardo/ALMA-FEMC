@@ -42,7 +42,7 @@
 //  THIS SOFTWARE IN ERROR.
 //
 /* SOCKET.H--definitions for SOCKET API
- *                                          
+ *
  * This header file corresponds to version 1.1 of the Windows Sockets specification.
  *
  * This file includes parts which are Copyright (c) 1982-1986 Regents
@@ -896,6 +896,6 @@ typedef struct timeval TIMEVAL;
 typedef struct timeval *PTIMEVAL;
 typedef struct timeval D_FAR *LPTIMEVAL;
 
-#include "netdb.h"
+#include "../inc/netdb.h"
 #endif   /* _SOCKETAPI_ */
 

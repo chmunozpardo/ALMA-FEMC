@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.ts": "plaintext",
+        "frontend.h": "c"
+    }
+}

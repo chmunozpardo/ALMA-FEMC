@@ -19,11 +19,11 @@
 //   patents: US#5860082, US#6260156.
 //
 //   In addition to civil penalties for infringement of copyright
-//   under applicable U.S. law, 17 U.S.C. §1204 provides criminal
+//   under applicable U.S. law, 17 U.S.C. ï¿½1204 provides criminal
 //   penalties for violation of (a) the restrictions on circumvention
-//   of copyright protection systems found in 17 U.S.C. §1201 and
+//   of copyright protection systems found in 17 U.S.C. ï¿½1201 and
 //   (b) the protections for the integrity of copyright management
-//   information found in 17 U.S.C. §1202.
+//   information found in 17 U.S.C. ï¿½1202.
 //
 //   U.S. Government Restricted Rights. Use, duplication,
 //   reproduction, or transfer of this commercial product and
@@ -190,7 +190,7 @@ typedef unsigned char BYTE;
 
 #ifdef KERNEL
 #ifdef ALLOC_TRACE
-#include "allocdef.h"
+#include "../inc/allocdef.h"
 #define malloct(size, id) Malloc(size, id)
 #define calloct(items, size, id) Calloc(items, size, id)
 #define realloct(block, size, id) ReAlloc(block, size, id)

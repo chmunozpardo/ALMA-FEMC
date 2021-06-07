@@ -8,11 +8,7 @@
             "type": "shell",
             "command": "wmake",
             "args": [
-                "-f",
-                "fe_mc.mk",
-                "-h",
-                "-e",
-                "fe_mc.exe"
+                "-h"
             ],
             "group": "build",
         }
