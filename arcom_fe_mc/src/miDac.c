@@ -11,10 +11,10 @@
 #include <string.h>     /* memcpy */
 #include <stdio.h>      /* printf */
 
-#include "../inc/frontend.h"
-#include "../inc/error.h"
-#include "../inc/lprSerialInterface.h"
-#include "../inc/debug.h"
+#include "frontend.h"
+#include "error.h"
+#include "lprSerialInterface.h"
+#include "debug.h"
 
 /* Globals */
 /* Externs */

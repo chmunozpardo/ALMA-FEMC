@@ -11,12 +11,12 @@
 #include <stdio.h>      /* printf & sscanf */
 #include <string.h>     /* memset & strtok */
 
-#include "../inc/error.h"
-#include "../inc/frontend.h"
-#include "../inc/debug.h"
-#include "../inc/serialInterface.h"
-#include "../inc/loSerialInterface.h"
-#include "../inc/iniWrapper.h"
+#include "error.h"
+#include "frontend.h"
+#include "debug.h"
+#include "serialInterface.h"
+#include "loSerialInterface.h"
+#include "iniWrapper.h"
 
 /* Globals */
 /* Externs */

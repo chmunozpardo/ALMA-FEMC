@@ -10,12 +10,12 @@
 #include <stdio.h>      /* printf */
 #include <stdlib.h>     /* exit */
 
-#include "../inc/frontend.h"
-#include "../inc/debug.h"
-#include "../inc/error.h"
-#include "../inc/fetimSerialInterface.h"
-#include "../inc/async.h"
-#include "../inc/globalOperations.h"
+#include "frontend.h"
+#include "debug.h"
+#include "error.h"
+#include "fetimSerialInterface.h"
+#include "async.h"
+#include "globalOperations.h"
 
 
 

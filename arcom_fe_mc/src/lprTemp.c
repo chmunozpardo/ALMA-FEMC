@@ -10,11 +10,11 @@
 /* Includes */
 #include <stdio.h>      /* printf */
 
-#include "../inc/debug.h"
-#include "../inc/frontend.h"
-#include "../inc/error.h"
-#include "../inc/lprSerialInterface.h"
-#include "../inc/globalDefinitions.h"
+#include "debug.h"
+#include "frontend.h"
+#include "error.h"
+#include "lprSerialInterface.h"
+#include "globalDefinitions.h"
 
 /* Globals */
 /* Externs */

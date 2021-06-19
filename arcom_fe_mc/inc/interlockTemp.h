@@ -22,7 +22,7 @@
     /* Extra includes */
     /* Interlock temperature sensors defines */
     #ifndef _INTERLOCK_TEMP_SENS_H
-        #include "../inc/interlockTempSens.h"
+        #include "interlockTempSens.h"
     #endif /* _INTERLOCK_TEMP_SENS_H */
 
     /* Defines */

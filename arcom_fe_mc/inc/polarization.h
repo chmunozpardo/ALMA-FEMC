@@ -23,27 +23,27 @@
     /* Extra includes */
     /* GLOBAL DEFINITIONS Defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
     /* Sideband */
     #ifndef _SIDEBAND_H
-        #include "../inc/sideband.h"
+        #include "sideband.h"
     #endif /* _SIDEBAND_H */
 
     /* LNA LED */
     #ifndef _LNALED_H
-        #include "../inc/lnaLed.h"
+        #include "lnaLed.h"
     #endif /* _LNALED_H */
 
     /* SIS Heater */
     #ifndef _SISHEATER_H
-        #include "../inc/sisHeater.h"
+        #include "sisHeater.h"
     #endif /* _SIS_HEATER_H */
 
     /* Polarization special messages */
     #ifndef _POLSPECIALMSGS_H
-        #include "../inc/polSpecialMsgs.h"
+        #include "polSpecialMsgs.h"
     #endif /* _POLSPECIALMSGS_H */
 
     /* Defines */

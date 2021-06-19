@@ -55,10 +55,10 @@
 
 
 //contains all the definitions for return values and error messages
-#include "../inc/compiler.h"
-#include "../inc/api.h"
-#include "../inc/htapic.h"
-#include "../inc/xxtea.h"
+#include "compiler.h"
+#include "api.h"
+#include "htapic.h"
+#include "xxtea.h"
 
 /*
 adapter for cgi interfacing with HTTPD server

@@ -21,12 +21,12 @@
     /* Extra includes */
     /* Interlock sensors defines */
     #ifndef _INTERLOCK_SENSORS_H
-        #include "../inc/interlockSensors.h"
+        #include "interlockSensors.h"
     #endif /* _INTERLOCK_SENSORS_H */
 
     /* Interlock state defines */
     #ifndef _INTERLOCK_STATE_H
-        #include "../inc/interlockState.h"
+        #include "interlockState.h"
     #endif /* _INTERLOCK_STATE_H */
 
     /* Submodule definitions */

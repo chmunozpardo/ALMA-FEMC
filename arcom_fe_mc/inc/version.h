@@ -29,24 +29,24 @@
         Add error codes ERC_... to be used by all subsystems.
         Delete PLL_LOOP_BANDWIDTH_UNDEFINED
         Much less printing on startup and shutdown: only print loaded config and errors.
-        Suppress errors about redirect stderr on startup; reassigned IRQ.  
-        Delete OWB simulator and stored list.     
+        Suppress errors about redirect stderr on startup; reassigned IRQ.
+        Delete OWB simulator and stored list.
         Added console system report.
         Added ifSwitch: allChannelsHandler, cryostatTemp: sequentialCoeffHandler, monitor readback LPR EDFA coeff.
         Always allow LO PA drain voltage setting for BAND1 and BAND2.
         Create CRYO_HRS.INI file if it doesn't exist.
 
     2018-04-06 2.8.7
-        Bugfix: fetimSerialInterface::getFetimExtTemp() stores in 
+        Bugfix: fetimSerialInterface::getFetimExtTemp() stores in
           frontend.fetim.compressor.temp[currentAsyncFetimExtTempModule] instead of [currentCompressorModule].
         Bugfix: he2press::pressHandler() returns last async value instead of reading synchronously.
         Renamed compTemp.* to fetimExtTemp.*
         Renamed all refs to "FETIM compressor temperature" to "FETIM external temperature"
         Delete DATABASE_RANGE stuff from (FETIM) compressor.c, fetimExtTemp.c, he2Press.c
-        
+
     2017-06-27 2.8.6
         Adds check for [CRYO] AVAILABLE=N to suppress cryostat async and all m&c
-        
+
     2017-01-08 2.8.5
         Official accepted release to the ALMA array.
 
@@ -119,7 +119,7 @@
         Modified and built by Morgan McLeod <mmcleod@nrao.edu>
         - FETIM He2 buffer tank is monitored asynchronously.
         - FETIM temperature sensor scaling corrected to match hardware.
-        - Added bit shift one place to right when monitoring He2 buffer tank 
+        - Added bit shift one place to right when monitoring He2 buffer tank
           and external temperature sensors.
         - Disabled DEBUG_STARTUP which was left enabled in previous release.
         - Fixed infinite loop preventing shutdown initiated by FETIM.
@@ -393,7 +393,7 @@
     #define VERSION_NOTES   "FEMC 3.5.2 Correct band 5 SIS sense resistor; Enable/disable B1 B2 Sb2 LNA stages with Sb1."
 
     #define PRODUCT_TREE    "FEND-40.04.03.03-011-A-FRM"
-    #define AUTHOR          "Morgan McLeod - NRAO (mmcleod@nrao.edu)"
+    #define AUTHOR          "Aaaahhh - NRAO (mmcleod@nrao.edu)"
     #define BUGZILLA        "jira.alma.cl"
 
     /* Prototypes */

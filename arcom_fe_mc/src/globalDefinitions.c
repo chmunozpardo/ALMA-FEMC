@@ -13,10 +13,10 @@
 #include <string.h>                 /* strstr, strlen */
 #include <math.h>                   /* pow */
 
-#include "../inc/globalDefinitions.h"
-#include "../inc/can.h"
-#include "../inc/error.h"
-#include "../inc/debug.h"
+#include "globalDefinitions.h"
+#include "can.h"
+#include "error.h"
+#include "debug.h"
 
 /* Globals */
 /* Externs */

@@ -21,7 +21,7 @@
     /* Extra includes */
     /* CARTRIDGE defines */
     #ifndef _CARTRIDGE_H
-        #include "../inc/cartridge.h"
+        #include "cartridge.h"
     #endif  /* _CARTRIDGE_H */
 
     /* Defines */

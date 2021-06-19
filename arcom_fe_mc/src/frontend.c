@@ -11,13 +11,13 @@
 #include <stdio.h>      /* printf */
 #include <string.h>     /* memset */
 
-#include "../inc/frontend.h"
-#include "../inc/error.h"
-#include "../inc/iniWrapper.h"
-#include "../inc/debug.h"
+#include "frontend.h"
+#include "error.h"
+#include "iniWrapper.h"
+#include "debug.h"
 
 #include "../sockets/include/compiler.h"
-#include "../sockets/include/capi.h"
+#include "../sockets/include/Capi.h"
 
 /* Globals */
 /* Externs */

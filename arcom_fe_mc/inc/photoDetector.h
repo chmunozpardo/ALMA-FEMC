@@ -22,7 +22,7 @@
     /* Extra includes */
     /* GLOBAL DEFINITIONS Defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
     /* Submodules definitions */

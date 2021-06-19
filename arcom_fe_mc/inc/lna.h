@@ -22,17 +22,17 @@
     /* Extra includes */
     /* CAN module defines */
     #ifndef _CAN_H
-        #include "../inc/can.h"
+        #include "can.h"
     #endif /* _CAN_H */
 
     /* GLOBAL DEFINITIONS Defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
     /* LNA Stage */
     #ifndef _LNA_STAGE_H
-        #include "../inc/lnaStage.h"
+        #include "lnaStage.h"
     #endif /* _LNA_STAGE */
 
     /* Submodules definitions */

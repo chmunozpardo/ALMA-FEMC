@@ -6,11 +6,26 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "wmake",
-            "args": [
-                "-h"
-            ],
-            "group": "build",
+            "linux": {
+                "command": "open-watcom.wmake",
+                "args": [
+                    "-h"
+                ],
+                "options": {
+                    "env": {
+                        "INCLUDE": "/snap/open-watcom/current/h/",
+                        "WATCOM": "/snap/open-watcom/current"
+                    }
+                },
+                "group": "build",
+            },
+            "windows": {
+                "command": "wmake",
+                "args": [
+                    "-h"
+                ],
+                "group": "build",
+            }
         }
     ]
 }

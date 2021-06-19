@@ -22,12 +22,12 @@
     /* Extra includes */
     /* CRYOSTATTEMP defines */
     #ifndef _CRYOSTATTEMP_H
-        #include "../inc/cryostatTemp.h"
+        #include "cryostatTemp.h"
     #endif /* _CRYOSTATTEMP_H */
 
     /* GLOBALDEFINITIONS defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
     /* Defines */

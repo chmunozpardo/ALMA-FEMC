@@ -10,10 +10,10 @@
 /* includes */
 #include <stdio.h>      /* printf */
 
-#include "../inc/frontend.h"
-#include "../inc/debug.h"
-#include "../inc/error.h"
-#include "../inc/fetimSerialInterface.h"
+#include "frontend.h"
+#include "debug.h"
+#include "error.h"
+#include "fetimSerialInterface.h"
 
 /* Globals */
 unsigned char   currentInterlockGlitchModule=0;

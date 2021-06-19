@@ -9,10 +9,10 @@
 /* Includes */
 #include <stdio.h>      /* printf */
 
-#include "../inc/frontend.h"
-#include "../inc/error.h"
-#include "../inc/debug.h"
-#include "../inc/lprSerialInterface.h"
+#include "frontend.h"
+#include "error.h"
+#include "debug.h"
+#include "lprSerialInterface.h"
 
 /* Globals */
 /* Extern */

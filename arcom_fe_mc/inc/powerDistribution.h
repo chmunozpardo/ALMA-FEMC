@@ -25,12 +25,12 @@
     /* Extra includes */
     /* GLOBAL DEFINITIONS Defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
     /* PDMODULE defines */
     #ifndef _PDMODULE_H
-        #include "../inc/pdModule.h"
+        #include "pdModule.h"
     #endif /* _PDMODULE_H */
 
     /* Defines */

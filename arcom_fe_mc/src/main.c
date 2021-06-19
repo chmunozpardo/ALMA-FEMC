@@ -10,18 +10,18 @@
 /* Includes */
 #include <stdio.h>      /* printf */
 
-#include "../inc/debug.h"
-#include "../inc/version.h"
-#include "../inc/globalOperations.h"
-#include "../inc/globalDefinitions.h"
-#include "../inc/main.h"
-#include "../inc/error.h"
-#include "../inc/can.h"
-#include "../inc/pegasus.h"
-#include "../inc/console.h"
-#include "../inc/async.h"
-#include "../inc/timer.h"
-#include "../inc/ppcomm.h"
+#include "debug.h"
+#include "version.h"
+#include "globalOperations.h"
+#include "globalDefinitions.h"
+#include "main.h"
+#include "error.h"
+#include "can.h"
+#include "pegasus.h"
+#include "console.h"
+#include "async.h"
+#include "timer.h"
+#include "ppComm.h"
 
 /* Globals */
 /* Externs */

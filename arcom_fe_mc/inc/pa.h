@@ -21,12 +21,12 @@
     /* Extra includes */
     /* GLOBAL DEFINITIONS Defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
     /* Power Amplifier Channel */
     #ifndef _PACHANNEL_H
-        #include "../inc/paChannel.h"
+        #include "paChannel.h"
     #endif /* _PACHANNEL_H */
 
     /* Submodules definitions */

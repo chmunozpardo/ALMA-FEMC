@@ -20,11 +20,11 @@
 #include <conio.h>      /* inpw, outpw */
 #include <stdio.h>      /* printf */
 
-#include "../inc/error.h"
-#include "../inc/serialMux.h"
-#include "../inc/timer.h"
-#include "../inc/debug.h"
-#include "../inc/globalDefinitions.h"
+#include "error.h"
+#include "serialMux.h"
+#include "timer.h"
+#include "debug.h"
+#include "globalDefinitions.h"
 
 /* Globals */
 /* Externs */

@@ -22,13 +22,13 @@
 #include <math.h>       /* pow */
 #include <errno.h>      /* errno */
 
-#include "../inc/lprSerialInterface.h"
-#include "../inc/error.h"
-#include "../inc/serialInterface.h"
-#include "../inc/timer.h"
-#include "../inc/frontend.h"
-#include "../inc/debug.h"
-#include "../inc/laser.h"
+#include "lprSerialInterface.h"
+#include "error.h"
+#include "serialInterface.h"
+#include "timer.h"
+#include "frontend.h"
+#include "debug.h"
+#include "laser.h"
 
 /* Globals */
 /* Externs */

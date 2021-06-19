@@ -19,9 +19,9 @@
 #include <time.h>   /* clock */
 #include <i86.h>    /* delay */
 
-#include "../inc/timer.h"
-#include "../inc/error.h"
-#include "../inc/globalDefinitions.h"
+#include "timer.h"
+#include "error.h"
+#include "globalDefinitions.h"
 
 /* Globals */
 static clock_t asyncStartTime[MAX_TIMERS_NUMBER]; // A global for the async timer start time

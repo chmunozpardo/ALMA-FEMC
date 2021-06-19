@@ -29,7 +29,7 @@
         // #define DEBUG_SERIAL_WRITE          // Turn on Serial interface write debug
                                                //   Note that this mode works as a one-shot only.
                                                //   Set LATCH_DEBUG_SERIAL_WRITE=1 before each call.
-        // #define DEBUG_SERIAL_WAIT           // Turn on Serial interface wait debug 
+        // #define DEBUG_SERIAL_WAIT           // Turn on Serial interface wait debug
 
         // #define DEBUG_POWERDIS              // Turn on Power Distribution debug
         // #define DEBUG_IFSWITCH              // Turn on IF Switch debug
@@ -49,7 +49,7 @@
         // #define DEBUG_CRYOSTAT_ASYNC        // Turn on cryotat async debugging
         // #define DEBUG_FETIM_ASYNC           // Turn on the FETIM async debugging
         // #define DEBUG_GO_STANDBY2           // Turn on debugging the STANDBY2 transition
-    
+
     #else /* If we are NOT developing: for release build */
         #define CONSOLE                     // Turn on the console interface
     #endif /* DEVELOPMENT */

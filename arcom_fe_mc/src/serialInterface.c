@@ -18,10 +18,10 @@
 /* Includes */
 #include <string.h>     /* memcpy */
 
-#include "../inc/error.h"
-#include "../inc/serialInterface.h"
-#include "../inc/serialMux.h"
-#include "../inc/frontend.h"
+#include "error.h"
+#include "serialInterface.h"
+#include "serialMux.h"
+#include "frontend.h"
 
 /* Globals */
 /* Externs */

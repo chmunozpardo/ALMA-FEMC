@@ -22,17 +22,17 @@
     /* Extra includes */
     /* GLOBAL DEFINITIONS Defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
         /* CAN module defines */
     #ifndef _CAN_H
-        #include "../inc/can.h"
+        #include "can.h"
     #endif /* _CAN_H */
 
     /* IFTEMPSERVO defines */
     #ifndef _IFTEMPSERVO_H
-        #include "../inc/ifTempServo.h"
+        #include "ifTempServo.h"
     #endif /* _IFTEMPSERVO_H */
 
     /* Defines */

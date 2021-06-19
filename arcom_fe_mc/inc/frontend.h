@@ -21,37 +21,37 @@
     /* Extra includes */
     /* GLOBAL DEFINITIONS Defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
     /* CARTRIDGE defines */
     #ifndef _CARTRIDGE_H
-        #include "../inc/cartridge.h"
+        #include "cartridge.h"
     #endif /* _CARTRIDGE_H */
 
     /* POWER DISTRIBUTION defines */
     #ifndef _POWERDISTRIBUTION_H
-        #include "../inc/powerDistribution.h"
+        #include "powerDistribution.h"
     #endif /* _POWERDISTRIBUTION_H */
 
     /* IF SWITCH defines */
     #ifndef _IFSWITCH_H
-        #include "../inc/ifSwitch.h"
+        #include "ifSwitch.h"
     #endif /* _IFSWITCH_H */
 
     /* CRYOSTAT SYSTEM defines */
     #ifndef _CRYOSTAT_H
-        #include "../inc/cryostat.h"
+        #include "cryostat.h"
     #endif /* _CRYOSTAT_H */
 
     /* LPR defines */
     #ifndef _LPR_H
-        #include "../inc/lpr.h"
+        #include "lpr.h"
     #endif /* _LPR_H */
 
     /* FETIM defines */
     #ifndef _FETIM_H
-        #include "../inc/fetim.h"
+        #include "fetim.h"
     #endif /* _FETIM_H */
 
 

@@ -12,17 +12,17 @@
 #include <i86.h>        /* _enable, _disable */
 #include <stdio.h>      /* printf */
 
-#include "../inc/error.h"
-#include "../inc/frontend.h"
-#include "../inc/globalDefinitions.h"
-#include "../inc/owb.h"
-#include "../inc/timer.h"
-#include "../inc/main.h"
-#include "../inc/console.h"
-#include "../inc/pegasus.h"
-#include "../inc/debug.h"
-#include "../inc/ppComm.h"
-#include "../inc/serialMux.h"
+#include "error.h"
+#include "frontend.h"
+#include "globalDefinitions.h"
+#include "owb.h"
+#include "timer.h"
+#include "main.h"
+#include "console.h"
+#include "pegasus.h"
+#include "debug.h"
+#include "ppComm.h"
+#include "serialMux.h"
 
 /* Initialization */
 /*! This function takes care of initializing all the subsystem of the system.

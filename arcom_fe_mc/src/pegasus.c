@@ -9,8 +9,8 @@
 
 /* Includes */
 #include <dos.h>
-#include "../inc/error.h"
-#include "../inc/pegasus.h"
+#include "error.h"
+#include "pegasus.h"
 
 /* Globals */
 /* These are globals because it makes it easier for the inline assembly

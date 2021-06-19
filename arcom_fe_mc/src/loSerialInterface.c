@@ -20,12 +20,12 @@
 #include <stdio.h>      /* printf */
 #include <math.h>       /* sqrt, fabs */
 
-#include "../inc/debug.h"
-#include "../inc/error.h"
-#include "../inc/loSerialInterface.h"
-#include "../inc/serialInterface.h"
-#include "../inc/frontend.h"
-#include "../inc/timer.h"
+#include "debug.h"
+#include "error.h"
+#include "loSerialInterface.h"
+#include "serialInterface.h"
+#include "frontend.h"
+#include "timer.h"
 
 /* Globals */
 /* Externs */

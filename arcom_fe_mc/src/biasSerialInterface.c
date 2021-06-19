@@ -20,12 +20,12 @@
 #include <stddef.h>     /* NULL */
 #include <stdio.h>      /* printf */
 
-#include "../inc/biasSerialInterface.h"
-#include "../inc/error.h"
-#include "../inc/serialInterface.h"
-#include "../inc/timer.h"
-#include "../inc/frontend.h"
-#include "../inc/debug.h"
+#include "biasSerialInterface.h"
+#include "error.h"
+#include "serialInterface.h"
+#include "timer.h"
+#include "frontend.h"
+#include "debug.h"
 
 /* Globals */
 /* Externs */

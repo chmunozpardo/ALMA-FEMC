@@ -11,11 +11,11 @@
 #include <stdlib.h>     /* malloc */
 #include <stdio.h>      /* printf */
 
-#include "../inc/error.h"
-#include "../inc/debug.h"
-#include "../inc/ppComm.h"
-#include "../inc/frontend.h"
-#include "../inc/globalOperations.h"
+#include "error.h"
+#include "debug.h"
+#include "ppComm.h"
+#include "frontend.h"
+#include "globalOperations.h"
 
 /* Globals */
 /* Externs */
@@ -69,7 +69,7 @@ static unsigned long errorTotal=0;
         "PD Channel",
         "PD Serial Interface",                  // 0x20
         "IF Channel",
-        "IF ../inc/Swit.h",
+        "IF Swit.h",
         "IF Switch Serial Interface",
         "Cryostat",
         "Turbo Pump",
@@ -83,7 +83,7 @@ static unsigned long errorTotal=0;
         "EDFA Photo Detector",
         "EDFA Laser Detector",
         "EDFA",
-        "LPR Optical ../inc/Swit.h",                   // 0x30
+        "LPR Optical Swit.h",                   // 0x30
         "LPR",
         "LPR Temperature",
         "LPR Serial Interface",
@@ -97,7 +97,7 @@ static unsigned long errorTotal=0;
         "FETIM Interlock State",
         "FETIM Interlock Temperature",
         "FETIM Interlock Flow",
-        "FETIM Interlock ../inc/Glit.h",
+        "FETIM Interlock Glit.h",
         "FETIM External Temperature",
         "FETIM He2 Pressure"                    // 0x40
     };
@@ -278,7 +278,7 @@ void storeError(unsigned char moduleNo, unsigned char errorNo) {
 
             case ERC_HARDWARE_WAIT:     // Waiting for previous command to finish
                 sprintf(error,
-                        "Waiting for previous command to ../inc/fini.h");
+                        "Waiting for previous command to fini.h");
                 break;
 
             case ERC_FLASH_ERROR:       //Error reading/writing flash disk

@@ -23,7 +23,7 @@
     /* Extra includes */
     /* polarization DAC */
     #ifndef _POLDAC_H
-        #include "../inc/polDac.h"
+        #include "polDac.h"
     #endif /* _POLDAC_H */
 
     /* Submodules definitions */

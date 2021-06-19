@@ -22,17 +22,17 @@
     /* Extra includes */
     /* LNA */
     #ifndef _LNA_H
-        #include "../inc/lna.h"
+        #include "lna.h"
     #endif /* _LNA_H */
 
     /* SIS */
     #ifndef _SIS_H
-        #include "../inc/sis.h"
+        #include "sis.h"
     #endif /* _SIS_H */
 
     /* SIS magnet */
     #ifndef _SISMAGNET_H
-        #include "../inc/sisMagnet.h"
+        #include "sisMagnet.h"
     #endif /* _SIS_MAGNET_H */
 
     /* Defines */

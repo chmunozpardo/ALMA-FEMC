@@ -14,7 +14,7 @@
     /* Extra includes */
     /* Debug defines */
     #ifndef _DEBUG_H
-        #include "../inc/debug.h"
+        #include "debug.h"
     #endif /* _DEBUG_H */
 
     /* Defines */

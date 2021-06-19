@@ -22,22 +22,22 @@
     /* Extra includes */
     /* POLARIZATION defines */
     #ifndef _POLARIZATION_H
-        #include "../inc/polarization.h"
+        #include "polarization.h"
     #endif  /* _POLARIZATION_H */
 
     /* LO module defines */
     #ifndef _LO_H
-        #include "../inc/lo.h"
+        #include "lo.h"
     #endif /* _LO_H */
 
     /* Cartridge temperature sensors */
     #ifndef _CARTRIDGETEMP_H
-        #include "../inc/cartridgeTemp.h"
+        #include "cartridgeTemp.h"
     #endif /* _CARTRIDGETEMP_H */
 
     /* Global Definitions */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
     /* Defines */

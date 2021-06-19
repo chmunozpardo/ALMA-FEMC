@@ -11,11 +11,11 @@
 #include <stddef.h>     /* NULL */
 #include <stdio.h>      /* printf */
 
-#include "../inc/frontend.h"
-#include "../inc/serialInterface.h"
-#include "../inc/biasSerialInterface.h"
-#include "../inc/error.h"
-#include "../inc/debug.h"
+#include "frontend.h"
+#include "serialInterface.h"
+#include "biasSerialInterface.h"
+#include "error.h"
+#include "debug.h"
 
 /* Globals */
 /* Externs */

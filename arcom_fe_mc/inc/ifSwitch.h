@@ -24,22 +24,22 @@
     /* Extra includes */
     /* GLOBAL DEFINITIONS Defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
         /* CAN module defines */
     #ifndef _CAN_H
-        #include "../inc/can.h"
+        #include "can.h"
     #endif /* _CAN_H */
 
     /* CARTRIDGE defines */
     #ifndef _CARTRIDGE_H
-        #include "../inc/cartridge.h"
+        #include "cartridge.h"
     #endif /* _CARTRIDGE_H */
 
     /* IFCHANNEL defines */
     #ifndef _IFCHANNEL_H
-        #include "../inc/ifChannel.h"
+        #include "ifChannel.h"
     #endif /* _IFCHANNEL_H */
 
     /* Defines */

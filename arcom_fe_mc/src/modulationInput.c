@@ -11,10 +11,10 @@
 #include <string.h>     /* memcpy */
 #include <stdio.h>      /* printf */
 
-#include "../inc/error.h"
-#include "../inc/frontend.h"
-#include "../inc/lprSerialInterface.h"
-#include "../inc/debug.h"
+#include "error.h"
+#include "frontend.h"
+#include "lprSerialInterface.h"
+#include "debug.h"
 
 /* Globals */
 unsigned char   currentModulationInputModule=0;

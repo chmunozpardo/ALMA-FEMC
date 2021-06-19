@@ -22,22 +22,22 @@
     /* Extra Includes */
     /* CAN module defines */
     #ifndef _CAN_H
-        #include "../inc/can.h"
+        #include "can.h"
     #endif /* _CAN_H */
 
     /* GLOBAL DEFINITIONS Defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
     /* PDCHANNEL defines */
     #ifndef _PDCHANNEL_H
-        #include "../inc/pdChannel.h"
+        #include "pdChannel.h"
     #endif /* _PDCHANNEL_H */
 
     /* CARTRIDGE defines */
     #ifndef _CARTRIDGE_H
-        #include "../inc/cartridge.h"
+        #include "cartridge.h"
     #endif /* _CARTRIDGE_H */
 
     /* Defines */

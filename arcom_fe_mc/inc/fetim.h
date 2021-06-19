@@ -21,17 +21,17 @@
     /* Extra includes */
     /* Interlock defines */
     #ifndef _INTERLOCK_H
-        #include "../inc/interlock.h"
+        #include "interlock.h"
     #endif /* _INTERLOCK_H */
 
     /* Compressor defines */
     #ifndef _COMPRESSOR_H
-        #include "../inc/compressor.h"
+        #include "compressor.h"
     #endif /* _COMPRESSOR_H */
 
     /* Dewar defines */
     #ifndef _DEWAR_H
-        #include "../inc/dewar.h"
+        #include "dewar.h"
     #endif /* _DEWAR_H */
 
     /* Submodule definitions */

@@ -22,17 +22,17 @@
     /* Extra includes */
     /* CAN module defines */
     #ifndef _CAN_H
-        #include "../inc/can.h"
+        #include "can.h"
     #endif /* _CAN_H */
 
     /* GLOBALDEFINITIONS Defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
     /* Modulation Input special messages */
     #ifndef _MISPECIALMSGS_H
-        #include "../inc/miSpecialMsgs.h"
+        #include "miSpecialMsgs.h"
     #endif /* _MISPECIALMSGS_H */
 
     /* Submodule definitions */

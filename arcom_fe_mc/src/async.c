@@ -10,10 +10,10 @@
 /* Includes */
 #include <stdio.h>      /* printf */
 
-#include "../inc/async.h"
-#include "../inc/frontend.h"
-#include "../inc/error.h"
-#include "../inc/debug.h"
+#include "async.h"
+#include "frontend.h"
+#include "error.h"
+#include "debug.h"
 
 /* Globals */
 ASYNC_STATE asyncState = ASYNC_CRYOSTAT; /*!< This variable contains the current status

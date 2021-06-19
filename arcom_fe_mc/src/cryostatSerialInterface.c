@@ -23,15 +23,15 @@
 #include <errno.h>      /* errno */
 
 
-#include "../inc/cryostatSerialInterface.h"
-#include "../inc/cryostat.h"
-#include "../inc/error.h"
-#include "../inc/debug.h"
-#include "../inc/frontend.h"
-#include "../inc/serialInterface.h"
-#include "../inc/timer.h"
-#include "../inc/async.h"
-#include "../inc/can.h"
+#include "cryostatSerialInterface.h"
+#include "cryostat.h"
+#include "error.h"
+#include "debug.h"
+#include "frontend.h"
+#include "serialInterface.h"
+#include "timer.h"
+#include "async.h"
+#include "can.h"
 
 /* Globals */
 /* Externs */

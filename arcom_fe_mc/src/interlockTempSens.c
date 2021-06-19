@@ -10,10 +10,10 @@
 /* Includes */
 #include <stdio.h>      /* printf */
 
-#include "../inc/frontend.h"
-#include "../inc/debug.h"
-#include "../inc/fetimSerialInterface.h"
-#include "../inc/error.h"
+#include "frontend.h"
+#include "debug.h"
+#include "fetimSerialInterface.h"
+#include "error.h"
 
 /* Globals */
 unsigned char   currentInterlockTempSensModule=0;

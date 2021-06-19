@@ -22,17 +22,17 @@
     /* Extra Includes */
     /* CAN module defines */
     #ifndef _CAN_H
-        #include "../inc/can.h"
+        #include "can.h"
     #endif /* _CAN_H */
 
     /* GLOBAL DEFINITIONS Defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
     /* VACNUUM SENSOR defines */
     #ifndef _VACUUMSENSOR_H
-        #include "../inc/vacuumSensor.h"
+        #include "vacuumSensor.h"
     #endif /* _VACUUMSENSOR_H */
 
     /* Defines */

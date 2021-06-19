@@ -10,11 +10,11 @@
 /* Includes */
 #include <stdio.h>      /* printf */
 
-#include "../inc/frontend.h"
-#include "../inc/debug.h"
-#include "../inc/error.h"
-#include "../inc/fetimSerialInterface.h"
-#include "../inc/async.h"
+#include "frontend.h"
+#include "debug.h"
+#include "error.h"
+#include "fetimSerialInterface.h"
+#include "async.h"
 
 /* Globals */
 unsigned char   currentFetimExtTempModule=0;

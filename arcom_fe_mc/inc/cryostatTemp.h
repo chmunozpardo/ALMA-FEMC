@@ -19,8 +19,8 @@
     #define _CRYOSTATTEMP_H
 
     /* Extra includes */
-    #include "../inc/can.h"
-    #include "../inc/globalDefinitions.h"
+    #include "can.h"
+    #include "globalDefinitions.h"
 
     /* Defines */
     #define CRYOSTAT_TEMP_SENSORS_NUMBER    13  //!< Number of temperature sensors in the dewar

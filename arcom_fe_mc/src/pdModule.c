@@ -11,12 +11,12 @@
 #include <stdio.h>      /* printf */
 #include <string.h>     /* memcpy */
 
-#include "../inc/debug.h"
-#include "../inc/frontend.h"
-#include "../inc/error.h"
-#include "../inc/pdSerialInterface.h"
-#include "../inc/timer.h"
-#include "../inc/async.h"
+#include "debug.h"
+#include "frontend.h"
+#include "error.h"
+#include "pdSerialInterface.h"
+#include "timer.h"
+#include "async.h"
 
 /* Globals */
 /* Externs */

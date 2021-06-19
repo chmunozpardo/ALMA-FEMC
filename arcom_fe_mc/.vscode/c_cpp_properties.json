@@ -3,10 +3,14 @@
         {
             "name": "Win16",
             "includePath": [
-                "${workspaceFolder}/inc/**"
+                "/snap/open-watcom/current/h",
+                "${workspaceFolder}/inc",
+                "${workspaceFolder}/3rdParty",
+                "${workspaceFolder}/sockets/include"
             ],
-            "compilerPath": "C:/WATCOM/binnt/wcc.exe",
-            "cStandard": "c99"
+            "compilerPath": "/snap/bin/open-watcom.owcc-win16",
+            "cStandard": "c99",
+            "intelliSenseMode": "windows-msvc-x64"
         }
     ],
     "version": 4

@@ -21,12 +21,12 @@
     /* Extra includes */
     /* GLOBAL DEFINITIONS Defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
     /* POLARIZATION defines */
     #ifndef _POLARIZATION_H
-        #include "../inc/polarization.h"
+        #include "polarization.h"
     #endif /* _POLARIZATION_H */
 
     /* Defines */

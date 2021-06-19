@@ -108,7 +108,7 @@ typedef unsigned long DWORD;
 
 /* Include IP address definition */
 #ifndef __IPADDR_H
-#include "../inc/ipaddr.h"
+#include "ipaddr.h"
 #endif
 
 #ifndef __PACKED__

@@ -10,7 +10,7 @@
 /* Includes */
 #include <stdio.h>      /* printf */
 
-#include "../inc/version.h"
+#include "version.h"
 
 /* Display version information */
 /*! This function will display the version information to the console. */

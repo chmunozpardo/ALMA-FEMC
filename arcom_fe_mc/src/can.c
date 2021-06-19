@@ -12,19 +12,19 @@
 #include <string.h>     /* memcpy */
 #include <stdio.h>      /* printf */
 
-#include "../inc/ppComm.h"
-#include "../inc/version.h"
-#include "../inc/can.h"
-#include "../inc/error.h"
-#include "../inc/pegasus.h"
-#include "../inc/frontend.h"
-#include "../inc/main.h"
-#include "../inc/debug.h"
-#include "../inc/serialMux.h"
-#include "../inc/console.h"
-#include "../inc/owb.h"
-#include "../inc/globalOperations.h"
-#include "../inc/globalDefinitions.h"
+#include "ppComm.h"
+#include "version.h"
+#include "can.h"
+#include "error.h"
+#include "pegasus.h"
+#include "frontend.h"
+#include "main.h"
+#include "debug.h"
+#include "serialMux.h"
+#include "console.h"
+#include "owb.h"
+#include "globalOperations.h"
+#include "globalDefinitions.h"
 
 /* Globals */
 /* Externs */

@@ -22,32 +22,32 @@
     /* Extra includes */
     /* GLOBAL DEFINITIONS Defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
     /* Active Multiplier Chain (AMC) */
     #ifndef _AMC_H
-        #include "../inc/amc.h"
+        #include "amc.h"
     #endif /* _AMC_H */
 
     /* Phase Lock Loop  (PLL) */
     #ifndef _PLL_H
-        #include "../inc/pll.h"
+        #include "pll.h"
     #endif /* _PLL_H */
 
     /* Photomixer */
     #ifndef _PHOTOMIXER_H
-        #include "../inc/photomixer.h"
+        #include "photomixer.h"
     #endif /* _PHOTOMIXER_H */
 
     /* Power Amplifier (PA) */
     #ifndef _PA_H
-        #include "../inc/pa.h"
+        #include "pa.h"
     #endif  /* _PA_H */
 
     /* YIG Tuneable Oscillator (YTO) */
     #ifndef _YTO_H
-        #include "../inc/yto.h"
+        #include "yto.h"
     #endif /* _YTO_H */
 
     /* Defines */

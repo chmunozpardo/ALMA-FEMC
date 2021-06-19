@@ -22,12 +22,12 @@
     /* Extra includes */
     /* GLOBALDEFINITIONS Defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
     /* interlock glitch counter defines */
     #ifndef _INTERLOCK_GLITCH_H
-        #include "../inc/interlockGlitch.h"
+        #include "interlockGlitch.h"
     #endif /* _INTERLOCK_GLITCH_H */
 
     /* Submodule definitions */

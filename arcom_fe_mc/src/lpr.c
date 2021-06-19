@@ -10,14 +10,14 @@
 #include <stdio.h>      /* printf */
 #include <string.h>     /* strcpy */
 
-#include "../inc/debug.h"
-#include "../inc/error.h"
-#include "../inc/frontend.h"
-#include "../inc/timer.h"
-#include "../inc/lprSerialInterface.h"
-#include "../inc/serialInterface.h"
-#include "../inc/can.h"
-#include "../inc/iniWrapper.h"
+#include "debug.h"
+#include "error.h"
+#include "frontend.h"
+#include "timer.h"
+#include "lprSerialInterface.h"
+#include "serialInterface.h"
+#include "can.h"
+#include "iniWrapper.h"
 
 
 /* Globals */

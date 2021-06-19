@@ -10,10 +10,10 @@
 /* Includes */
 #include <stdio.h>      /* printf */
 
-#include "../inc/polSpecialMsgs.h"
-#include "../inc/error.h"
-#include "../inc/globalDefinitions.h"
-#include "../inc/debug.h"
+#include "polSpecialMsgs.h"
+#include "error.h"
+#include "globalDefinitions.h"
+#include "debug.h"
 
 /* Globals */
 /* Externs */

@@ -11,11 +11,11 @@
 #include <string.h>     /* memcpy */
 #include <stdio.h>      /* printf */
 
-#include "../inc/debug.h"
-#include "../inc/frontend.h"
-#include "../inc/globalDefinitions.h"
-#include "../inc/error.h"
-#include "../inc/cryostatSerialInterface.h"
+#include "debug.h"
+#include "frontend.h"
+#include "globalDefinitions.h"
+#include "error.h"
+#include "cryostatSerialInterface.h"
 
 /* Globals */
 /* Externs */

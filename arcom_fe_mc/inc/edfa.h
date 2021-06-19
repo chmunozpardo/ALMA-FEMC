@@ -21,17 +21,17 @@
     /* Extra includes */
     /* LASER defines */
     #ifndef _LASER_H
-        #include "../inc/laser.h"
+        #include "laser.h"
     #endif /* _LASER_H */
 
     /* PHOTODETECTOR defines */
     #ifndef _PHOTODETECTOR_H
-        #include "../inc/photoDetector.h"
+        #include "photoDetector.h"
     #endif /* _PHOTODETECTOR_H */
 
     /* MODULATIONINPUT defines */
     #ifndef _MODULATIONINPUT_H
-        #include "../inc/modulationInput.h"
+        #include "modulationInput.h"
     #endif /* _MODULATIONINPUT_H */
 
     /* Submodule definitions */

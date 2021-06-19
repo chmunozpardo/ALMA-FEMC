@@ -13,14 +13,14 @@
 #include <stdlib.h>     /* rand, srand */
 #include <time.h>       /* clock, time */
 
-#include "../inc/serialMux.h"
-#include "../inc/timer.h"
-#include "../inc/owb.h"
-#include "../inc/error.h"
-#include "../inc/globalDefinitions.h"
-#include "../inc/debug.h"
-#include "../inc/iniWrapper.h"
-#include "../inc/pegasus.h"
+#include "serialMux.h"
+#include "timer.h"
+#include "owb.h"
+#include "error.h"
+#include "globalDefinitions.h"
+#include "debug.h"
+#include "iniWrapper.h"
+#include "pegasus.h"
 
 /* Globals */
 /* Static */

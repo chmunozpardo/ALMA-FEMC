@@ -10,13 +10,13 @@
 #include <string.h>     /* memcpy */
 #include <stdio.h>      /* printf */
 
-#include "../inc/debug.h"
-#include "../inc/error.h"
-#include "../inc/frontend.h"
-#include "../inc/cryostatSerialInterface.h"
-#include "../inc/iniWrapper.h"
-#include "../inc/async.h"
-#include "../inc/timer.h"
+#include "debug.h"
+#include "error.h"
+#include "frontend.h"
+#include "cryostatSerialInterface.h"
+#include "iniWrapper.h"
+#include "async.h"
+#include "timer.h"
 
 #define MACRO_TVO_SENSOR_NAMES {"CRYOCOOLER_4K",    \
                                 "PLATE_4K_LINK_1",  \

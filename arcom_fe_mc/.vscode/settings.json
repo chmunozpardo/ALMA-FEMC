@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.ts": "plaintext",
-        "frontend.h": "c"
+        "*.h": "c",
+        "*.c": "c"
     }
 }

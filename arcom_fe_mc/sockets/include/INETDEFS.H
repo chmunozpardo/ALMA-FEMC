@@ -190,7 +190,7 @@ typedef unsigned char BYTE;
 
 #ifdef KERNEL
 #ifdef ALLOC_TRACE
-#include "../inc/allocdef.h"
+#include "allocdef.h"
 #define malloct(size, id) Malloc(size, id)
 #define calloct(items, size, id) Calloc(items, size, id)
 #define realloct(block, size, id) ReAlloc(block, size, id)

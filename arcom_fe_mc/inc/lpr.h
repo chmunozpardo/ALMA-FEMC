@@ -21,17 +21,17 @@
     /* Extra includes */
     /* LPRTEMP defines */
     #ifndef _LPRTEMP_H
-        #include "../inc/lprTemp.h"
+        #include "lprTemp.h"
     #endif /* _LPRTEMP_H */
 
     /* OPTICALSWITCH defines */
     #ifndef _OPTICALSWITCH_H
-        #include "../inc/opticalSwitch.h"
+        #include "opticalSwitch.h"
     #endif /* _OPTICALSWITCH_H */
 
     /* EDFA defines */
     #ifndef _EDFA_H
-        #include "../inc/edfa.h"
+        #include "edfa.h"
     #endif /* _EDFA_H */
 
     /* Defines */

@@ -22,17 +22,17 @@
     /* Extra includes */
     /* CAN module defines */
     #ifndef _CAN_H
-        #include "../inc/can.h"
+        #include "can.h"
     #endif /* _CAN_H */
 
     /* POLARIZATION defines */
     #ifndef _POLARIZATION_H
-        #include "../inc/polarization.h"
+        #include "polarization.h"
     #endif  /* _POLARIZATION_H */
 
     /* GLOBAL DEFINITIONS Defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
 

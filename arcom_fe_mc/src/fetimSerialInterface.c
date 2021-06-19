@@ -19,12 +19,12 @@
 /* Includes */
 #include <stdio.h>      /* printf */
 
-#include "../inc/serialInterface.h"
-#include "../inc/error.h"
-#include "../inc/debug.h"
-#include "../inc/frontend.h"
-#include "../inc/fetimSerialInterface.h"
-#include "../inc/async.h"
+#include "serialInterface.h"
+#include "error.h"
+#include "debug.h"
+#include "frontend.h"
+#include "fetimSerialInterface.h"
+#include "async.h"
 
 
 

@@ -21,37 +21,37 @@
     /* Extra includes */
     /* CRYOSTATTEMP defines */
     #ifndef _CRYOSTATTEMP_H
-        #include "../inc/cryostatTemp.h"
+        #include "cryostatTemp.h"
     #endif  /* _CRYOSTATTEMP_H */
 
     /* BACKINGPUMP defines */
     #ifndef _BACKINGPUMP_H
-        #include "../inc/backingPump.h"
+        #include "backingPump.h"
     #endif  /* _BACKINGPUMP_H */
 
     /* TURBOPUMP defines */
     #ifndef _TURBOPUMP_H
-        #include "../inc/turboPump.h"
+        #include "turboPump.h"
     #endif  /* _TURBOPUMP_H */
 
     /* GATEVALVE defines */
     #ifndef _GATEVALVE_H
-        #include "../inc/gateValve.h"
+        #include "gateValve.h"
     #endif  /* _GATEVALVE_H */
 
     /* SOLENOIDVALVE defines */
     #ifndef _SOLENOIDVALVE_H
-        #include "../inc/solenoidValve.h"
+        #include "solenoidValve.h"
     #endif  /* _SOLENOIDVALVE_H */
 
     /* VACUUMCONTROLLER defines */
     #ifndef _VACUUMCONTROLLER_H
-        #include "../inc/vacuumController.h"
+        #include "vacuumController.h"
     #endif  /* _VACUUMCONTROLLER_H */
 
     /* GLOBALDEFINITIONS defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif  /* _GLOBALDEFINITIONS_H */
 
     /* Defines */

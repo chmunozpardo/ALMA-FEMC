@@ -55,7 +55,7 @@
    2001-05-11  GPvN cleanup
    2000-05-18  GVvN first version
  */
-#include "../inc/compiler.h"
+#include "compiler.h"
 
 #ifndef TCBH
 #if defined(KERNEL) || defined(_SOCK32)

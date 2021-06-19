@@ -896,6 +896,6 @@ typedef struct timeval TIMEVAL;
 typedef struct timeval *PTIMEVAL;
 typedef struct timeval D_FAR *LPTIMEVAL;
 
-#include "../inc/netdb.h"
+#include "netdb.h"
 #endif   /* _SOCKETAPI_ */
 

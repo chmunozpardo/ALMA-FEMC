@@ -23,7 +23,7 @@
     /* Extra includes */
     /* polarization DAC */
     #ifndef _MIDAC_H
-        #include "../inc/miDac.h"
+        #include "miDac.h"
     #endif /* _MIDAC_H */
 
     /* Submodules definitions */

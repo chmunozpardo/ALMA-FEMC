@@ -21,12 +21,12 @@
 #include <math.h>       /* log */
 #include <errno.h>      /* errno */
 
-#include "../inc/ifSerialInterface.h"
-#include "../inc/error.h"
-#include "../inc/serialInterface.h"
-#include "../inc/timer.h"
-#include "../inc/frontend.h"
-#include "../inc/debug.h"
+#include "ifSerialInterface.h"
+#include "error.h"
+#include "serialInterface.h"
+#include "timer.h"
+#include "frontend.h"
+#include "debug.h"
 
 /* Globals */
 /* Externs */

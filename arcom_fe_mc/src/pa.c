@@ -9,11 +9,11 @@
 /* Includes */
 #include <stdio.h>      /* printf */
 
-#include "../inc/frontend.h"
-#include "../inc/error.h"
-#include "../inc/loSerialInterface.h"
-#include "../inc/debug.h"
-#include "../inc/globalDefinitions.h"
+#include "frontend.h"
+#include "error.h"
+#include "loSerialInterface.h"
+#include "debug.h"
+#include "globalDefinitions.h"
 
 /* Globals */
 /* Externs */

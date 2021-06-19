@@ -22,7 +22,7 @@
     /* Extra includes */
     /* Interlock flow sensors defines */
     #ifndef _INTERLOCK_FLOW_SENS_H
-        #include "../inc/interlockFlowSens.h"
+        #include "interlockFlowSens.h"
     #endif /* _INTERLOCK_Flow_SENS_H */
 
     /* Defines */

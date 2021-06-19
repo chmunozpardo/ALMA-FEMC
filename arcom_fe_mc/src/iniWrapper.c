@@ -11,9 +11,9 @@
 #include <stdio.h>      /* printf */
 #include <errno.h>      /* errno */
 
-#include "../inc/iniWrapper.h"
-#include "../inc/error.h"
-#include "../inc/debug.h"
+#include "iniWrapper.h"
+#include "error.h"
+#include "debug.h"
 
 /* Write info to the configuration file */
 /*! This function will write information to the selected configuration file.

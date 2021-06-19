@@ -7,106 +7,105 @@
     This file contains all the functions necessary to handle console accesses
     to the software. */
 
-
 /* Includes */
-#include <conio.h>      /* getch, kbhit, putch */
-#include <string.h>     /* strcmp, memcpy, strcpy, strtok */
-#include <stdio.h>      /* printf, flushall */
-#include <stdlib.h>     /* atoi, atof */
+#include "console.h"
 
-#include "../inc/console.h"
-#include "../inc/can.h"
-#include "../inc/main.h"
-#include "../inc/frontend.h"
-#include "../inc/globalDefinitions.h"
-#include "../inc/debug.h"
-#include "../inc/version.h"
-#include "../inc/async.h"
-#include "../inc/owb.h"
+#include <conio.h>  /* getch, kbhit, putch */
+#include <stdio.h>  /* printf, flushall */
+#include <stdlib.h> /* atoi, atof */
+#include <string.h> /* strcmp, memcpy, strcpy, strtok */
+
+#include "async.h"
+#include "can.h"
+#include "debug.h"
+#include "frontend.h"
+#include "globalDefinitions.h"
+#include "main.h"
+#include "owb.h"
+#include "version.h"
 
 /* Globals */
 /* Externs */
 #ifdef CONSOLE
-    unsigned char consoleEnable=ENABLE;
+unsigned char consoleEnable = ENABLE;
 #else
-    unsigned char consoleEnable=DISABLE;
+unsigned char consoleEnable = DISABLE;
 #endif /* DEVELOPMENT */
 
 /* Static */
 static unsigned char buffer[BUFFER_SIZE];
 static unsigned char lastBuffer[BUFFER_SIZE];
-static unsigned char bufferIndex=0;
-static unsigned char lastBufferIndex=0;
-
+static unsigned char bufferIndex = 0;
+static unsigned char lastBufferIndex = 0;
 
 /* Console */
 /*! This function handles the console inputs. */
-void console(void){
+void console(void) {
     unsigned char key;
     unsigned char counter;
 
     /* Echo data typed to console and store into circular buffer */
-    if(kbhit()){
-        key=getch();
+    if (kbhit()) {
+        key = getch();
         putch(key);
 
-        #ifdef DEBUG_CONSOLE
-            printf("(%d@%d)",
-                   key,
-                   bufferIndex);
-            flushall();
-        #endif /* DEBUG_CONSOLE */
+#ifdef DEBUG_CONSOLE
+        printf("(%d@%d)",
+               key,
+               bufferIndex);
+        flushall();
+#endif /* DEBUG_CONSOLE */
 
-        switch(key){
-            case DELETE_KEY: // Delete
-                if(bufferIndex>0){
+        switch (key) {
+            case DELETE_KEY:  // Delete
+                if (bufferIndex > 0) {
                     bufferIndex--;
-                    buffer[bufferIndex]='\0';
+                    buffer[bufferIndex] = '\0';
                 }
                 break;
-            case APOSTROPHE_KEY: // Apostrophe
+            case APOSTROPHE_KEY:  // Apostrophe
                 bufferIndex++;
                 memcpy(buffer,
                        lastBuffer,
                        BUFFER_SIZE);
-                for(counter=0;
-                    counter<bufferIndex;
-                    counter++){
+                for (counter = 0;
+                     counter < bufferIndex;
+                     counter++) {
                     putch(DELETE_KEY);
                 }
-                bufferIndex=lastBufferIndex;
+                bufferIndex = lastBufferIndex;
                 printf("%s",
                        buffer);
                 flushall();
                 break;
-            case QUOTE_KEY: // Quote
+            case QUOTE_KEY:  // Quote
                 bufferIndex++;
                 memcpy(buffer,
                        lastBuffer,
                        BUFFER_SIZE);
-                for(counter=0;
-                    counter<bufferIndex;
-                    counter++){
+                for (counter = 0;
+                     counter < bufferIndex;
+                     counter++) {
                     putch(DELETE_KEY);
                 }
                 printf("%s",
                        buffer);
                 parseBuffer();
-                bufferIndex=0;
-                buffer[0]='\0';
+                bufferIndex = 0;
+                buffer[0] = '\0';
                 break;
-            case ENTER_KEY: // Enter
+            case ENTER_KEY:  // Enter
                 memcpy(lastBuffer,
                        buffer,
                        BUFFER_SIZE);
-                lastBufferIndex=bufferIndex;
+                lastBufferIndex = bufferIndex;
                 parseBuffer();
-                bufferIndex=0;
-                buffer[0]='\0';
+                bufferIndex = 0;
+                buffer[0] = '\0';
                 break;
             default:
-                buffer[bufferIndex]=key;
-                buffer[bufferIndex+1]='\0';
+                buffer[bufferIndex] = key;
+                buffer[bufferIndex + 1] = '\0';
                 bufferIndex++;
                 break;
         }
@@ -114,7 +113,7 @@ void console(void){
 }
 
 /* Parse buffer */
-static void parseBuffer(void){
+static void parseBuffer(void) {
     unsigned char *token;
     unsigned char localBuf[BUFFER_SIZE];
 
@@ -126,40 +125,39 @@ static void parseBuffer(void){
            buffer);
 
     /* Extract the first token */
-    token=strtok(localBuf,
-                 " \0");
+    token = strtok(localBuf, " \0");
 
     /* Check the first token for known commands */
-    switch(*token){
-        case 'a': // *** 'a' -> toggles async process on/off ***
-            if(asyncState!=ASYNC_OFF){
-                asyncState=ASYNC_OFF;
+    switch (*token) {
+        case 'a':  // *** 'a' -> toggles async process on/off ***
+            if (asyncState != ASYNC_OFF) {
+                asyncState = ASYNC_OFF;
             } else {
-                asyncState=ASYNC_ON;
+                asyncState = ASYNC_ON;
             }
             break;
-        case 'c': // *** 'c' -> Control ***
+        case 'c':  // *** 'c' -> Control ***
             /* Get next token */
             token = strtok(NULL,
                            " \0");
 
             /* Extract the RCA from the token */
-            if(token != NULL){
+            if (token != NULL) {
                 CAN_ADDRESS = (unsigned long)htol(token);
                 /* Get payload qualifier token */
                 token = strtok(NULL,
                                " \0");
 
                 /* Extract qualifier from the token */
-                if(token != NULL){
-                    if(strcmp(token,
-                              "b")==0){ // ** 'b' -> Byte **
+                if (token != NULL) {
+                    if (strcmp(token,
+                               "b") == 0) {  // ** 'b' -> Byte **
                         /* Get next token */
                         token = strtok(NULL,
                                        " \0");
 
                         /* Extract the payload from the token */
-                        if(token != NULL){
+                        if (token != NULL) {
                             CAN_DATA(0) = (unsigned char)atoi(token);
                             CAN_SIZE = CAN_BYTE_SIZE;
                             // Disable interrupts (if necessary)
@@ -171,17 +169,17 @@ static void parseBuffer(void){
                             }
                             // Enable interrupts
                         }
-                    } else if(strcmp(token,
-                                     "i")==0){ // ** 'i' -> Integer **
+                    } else if (strcmp(token,
+                                      "i") == 0) {  // ** 'i' -> Integer **
                         /* Get next token */
                         token = strtok(NULL,
                                        " \0");
 
                         /* Extract the payload from the token */
-                        if(token != NULL){
+                        if (token != NULL) {
                             CONV_UINT(0) = (unsigned int)atoi(token);
-                            CAN_DATA(0)=CONV_CHR(1);
-                            CAN_DATA(1)=CONV_CHR(0);
+                            CAN_DATA(0) = CONV_CHR(1);
+                            CAN_DATA(1) = CONV_CHR(0);
                             CAN_SIZE = CAN_INT_SIZE;
                             // Disable interrupts (if necessary)
                             CANMessageHandler();
@@ -190,19 +188,19 @@ static void parseBuffer(void){
                             CANMessageHandler();
                             // Enable interrupts
                         }
-                    } else if(strcmp(token,
-                                     "f")==0){ // ** 'f' -> float **
+                    } else if (strcmp(token,
+                                      "f") == 0) {  // ** 'f' -> float **
                         /* Get next token */
                         token = strtok(NULL,
                                        " \0");
 
                         /* Extract the payload from the token */
-                        if(token != NULL){
+                        if (token != NULL) {
                             CONV_FLOAT = atof(token);
-                            CAN_DATA(0)=CONV_CHR(3);
-                            CAN_DATA(1)=CONV_CHR(2);
-                            CAN_DATA(2)=CONV_CHR(1);
-                            CAN_DATA(3)=CONV_CHR(0);
+                            CAN_DATA(0) = CONV_CHR(3);
+                            CAN_DATA(1) = CONV_CHR(2);
+                            CAN_DATA(2) = CONV_CHR(1);
+                            CAN_DATA(3) = CONV_CHR(0);
                             CAN_SIZE = CAN_FLOAT_SIZE;
                             // Disable interrupts (if necessary)
                             CANMessageHandler();
@@ -215,50 +213,50 @@ static void parseBuffer(void){
                 }
             }
             break;
-        case 'd': // *** 'd' -> Disables the console ***
+        case 'd':  // *** 'd' -> Disables the console ***
             printf("Console disabled!\n");
             printf("To re-enable, send a 1 to RCA 0x%lX\n",
                    SET_CONSOLE_ENABLE);
             consoleEnable = 0;
             break;
-        case 'e': // *** 'e' -> Read available ESNs on OWB***
+        case 'e':  // *** 'e' -> Read available ESNs on OWB***
             owbGetEsn();
             break;
-        case 'i': // *** 'i' -> Display version info ***
+        case 'i':  // *** 'i' -> Display version info ***
             displayVersion();
             break;
-        case 'm': // *** 'm' -> Monitor ***
-            CAN_SIZE=0;
+        case 'm':  // *** 'm' -> Monitor ***
+            CAN_SIZE = 0;
 
             /* Get next token */
             token = strtok(NULL,
                            " \0");
 
             /* Extract the RCA from the token */
-            if(token != NULL){
+            if (token != NULL) {
                 CAN_ADDRESS = (unsigned long)htol(token);
                 // Disable interrupts (if necessary)
                 CANMessageHandler();
                 // Enable interrupts
             }
             break;
-        case 'p': // *** 'p' -> LO PA_LIMITS tables report ***
+        case 'p':  // *** 'p' -> LO PA_LIMITS tables report ***
             loPaLimitsTablesReport();
             break;
-        case 's': // *** 's' -> cryostat sensor tables report ***
+        case 's':  // *** 's' -> cryostat sensor tables report ***
             cryostatSensorTablesReport();
             break;
-        case 't': // *** 't' -> FE and cartridges configuration report ***
+        case 't':  // *** 't' -> FE and cartridges configuration report ***
             feAndCartridgesConfigurationReport();
             break;
-        case 'q': // *** 'q' -> Quit ***
+        case 'q':  // *** 'q' -> Quit ***
             stop = 1;
             break;
-        case 'r': // *** 'r' -> Restarts ***
+        case 'r':  // *** 'r' -> Restarts ***
             stop = 1;
             restart = 1;
             break;
-        default: // Anything else print help
+        default:  // Anything else print help
             displayVersion();
             printf("Console help\n");
             printf(" RCAs from ALMA-40.00.00.00-75.35.25.00-D-ICD\n");
@@ -285,5 +283,3 @@ static void parseBuffer(void){
             break;
     }
 }
-
-

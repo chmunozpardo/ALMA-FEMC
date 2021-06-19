@@ -10,13 +10,13 @@
 /* Includes */
 #include <stdio.h>      /* printf */
 
-#include "../inc/debug.h"
-#include "../inc/frontend.h"
-#include "../inc/globalDefinitions.h"
-#include "../inc/error.h"
-#include "../inc/cryostatSerialInterface.h"
-#include "../inc/can.h"
-#include "../inc/async.h"
+#include "debug.h"
+#include "frontend.h"
+#include "globalDefinitions.h"
+#include "error.h"
+#include "cryostatSerialInterface.h"
+#include "can.h"
+#include "async.h"
 
 /* Globals */
 /* Externs */

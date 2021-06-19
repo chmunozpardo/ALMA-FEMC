@@ -17,12 +17,12 @@
 #include <dos.h>        /* _dos_setvect, _dos_getvect */
 #include <stdio.h>      /* printf */
 
-#include "../inc/error.h"
-#include "../inc/timer.h"
-#include "../inc/ppComm.h"
-#include "../inc/pegasus.h"
-#include "../inc/debug.h"
-#include "../inc/globalDefinitions.h"
+#include "error.h"
+#include "timer.h"
+#include "ppComm.h"
+#include "pegasus.h"
+#include "debug.h"
+#include "globalDefinitions.h"
 
 /* Globals */
 /* Static */

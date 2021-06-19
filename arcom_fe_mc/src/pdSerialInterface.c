@@ -20,12 +20,12 @@
 /* Includes */
 #include <stdio.h>      /* printf */
 
-#include "../inc/pdSerialInterface.h"
-#include "../inc/debug.h"
-#include "../inc/error.h"
-#include "../inc/frontend.h"
-#include "../inc/serialInterface.h"
-#include "../inc/timer.h"
+#include "pdSerialInterface.h"
+#include "debug.h"
+#include "error.h"
+#include "frontend.h"
+#include "serialInterface.h"
+#include "timer.h"
 
 /* Globals */
 /* Externs */

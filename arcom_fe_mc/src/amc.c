@@ -10,10 +10,10 @@
 #include <string.h>     /* memcpy */
 #include <stdio.h>      /* printf */
 
-#include "../inc/../inc/frontend.h"
-#include "../inc/../inc/error.h"
-#include "../inc/../inc/loSerialInterface.h"
-#include "../inc/../inc/debug.h"
+#include "frontend.h"
+#include "error.h"
+#include "loSerialInterface.h"
+#include "debug.h"
 
 /* Globals */
 /* Externs */

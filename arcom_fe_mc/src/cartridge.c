@@ -9,15 +9,15 @@
 /* Includes */
 #include <stdio.h>      /* printf */
 
-#include "../inc/frontend.h"
-#include "../inc/error.h"
-#include "../inc/debug.h"
-#include "../inc/biasSerialInterface.h"
-#include "../inc/iniWrapper.h"
-#include "../inc/async.h"
-#include "../inc/pdSerialInterface.h"
-#include "../inc/timer.h"
-#include "../inc/serialMux.h"
+#include "frontend.h"
+#include "error.h"
+#include "debug.h"
+#include "biasSerialInterface.h"
+#include "iniWrapper.h"
+#include "async.h"
+#include "pdSerialInterface.h"
+#include "timer.h"
+#include "serialMux.h"
 
 /* Statics */
 static HANDLER cartridgeSubsystemHandler[CARTRIDGE_SUBSYSTEMS_NUMBER]={biasSubsystemHandler,

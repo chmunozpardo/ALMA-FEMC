@@ -15,7 +15,7 @@
     /* Extra includes */
     /* CAN module defines */
     #ifndef _CAN_H
-        #include "../inc/can.h"
+        #include "can.h"
     #endif /* _CAN_H */
 
     /* Parallel Port Defines */

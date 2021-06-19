@@ -22,17 +22,17 @@
     /* Extra includes */
     /* GLOBALDEFINITIONS Defines */
     #ifndef _GLOBALDEFINITIONS_H
-        #include "../inc/globalDefinitions.h"
+        #include "globalDefinitions.h"
     #endif /* _GLOBALDEFINITIONS_H */
 
     /* Interlock temeprature sensors defines */
     #ifndef _INTERLOCK_TEMP_H
-        #include "../inc/interlockTemp.h"
+        #include "interlockTemp.h"
     #endif /* _INTERLOCK_TEMP_H */
 
     /* Interlock flow sensors defines */
     #ifndef _INTERLOCK_FLOW_H
-        #include "../inc/interlockFlow.h"
+        #include "interlockFlow.h"
     #endif /* _INTERLOCK_FLOW_H */
 
     /* Submodule definitions */

@@ -11,12 +11,12 @@
 #include <string.h>     /* memcpy */
 #include <stdio.h>      /* printf */
 
-#include "../inc/error.h"
-#include "../inc/frontend.h"
-#include "../inc/ifSerialInterface.h"
-#include "../inc/ifSwitch.h"
-#include "../inc/debug.h"
-#include "../inc/globalDefinitions.h"
+#include "error.h"
+#include "frontend.h"
+#include "ifSerialInterface.h"
+#include "ifSwitch.h"
+#include "debug.h"
+#include "globalDefinitions.h"
 
 /* Globals */
 /* Externs */
